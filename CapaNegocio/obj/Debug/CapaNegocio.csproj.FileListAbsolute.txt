@@ -1,0 +1,9 @@
+C:\Users\vasqu\source\repos\proyecto_credenciales_notas\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\vasqu\source\repos\proyecto_credenciales_notas\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\vasqu\source\repos\proyecto_credenciales_notas\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\vasqu\source\repos\proyecto_credenciales_notas\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\vasqu\source\repos\proyecto_credenciales_notas\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\vasqu\source\repos\proyecto_credenciales_notas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\vasqu\source\repos\proyecto_credenciales_notas\CapaNegocio\obj\Debug\CapaNego.81B9D119.Up2Date
+C:\Users\vasqu\source\repos\proyecto_credenciales_notas\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\vasqu\source\repos\proyecto_credenciales_notas\CapaNegocio\obj\Debug\CapaNegocio.pdb
