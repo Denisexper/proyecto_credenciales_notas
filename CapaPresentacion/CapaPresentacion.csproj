@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Credenciales.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Notas.aspx" />
     <Content Include="Principal.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -82,6 +83,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Notas.aspx.cs">
+      <DependentUpon>Notas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notas.aspx.designer.cs">
+      <DependentUpon>Notas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Principal.aspx.cs">
       <DependentUpon>Principal.aspx</DependentUpon>
