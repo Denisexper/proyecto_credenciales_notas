@@ -25,5 +25,40 @@ namespace CapaPresentacion
             GvNotas.DataSource = NotasN.ObtenerNotas();
             GvNotas.DataBind();
         }
+
+        protected void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(txtTitulo.Text) || string.IsNullOrEmpty(txtContenido.Text))
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "sweetAlert",
+                    "swal.fire('Error', 'Todos los campos son obligatorios', 'error')", true);
+                return;
+            }
+
+            string titulo = txtTitulo.Text;
+            string contenido = txtContenido.Text;
+
+            DateTime fecha_creacion = DateTime.Now;
+
+            bool exito = NotasN.InsertarNota(titulo, contenido, fecha_creacion);
+            if (exito) 
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "sweetAlert",
+                    "swal.fire('Exito', 'Nota guardada correctamente', 'success')", true);
+                LimpiarCampos();
+                CargarNotas();
+            }
+            else
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "sweetAlert",
+                    "swal.fire('Error', 'Ocurrio un error al guardar la nota', 'error')", true);
+            }
+        }
+
+        protected void LimpiarCampos()
+        {
+            txtTitulo.Text = string.Empty;
+            txtContenido.Text = string.Empty;
+        }
     }
 }
