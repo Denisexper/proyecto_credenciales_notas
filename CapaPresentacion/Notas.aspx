@@ -11,6 +11,8 @@
     <form id="form1" runat="server">
         <div>
         </div>
+        <asp:GridView ID="GvNotas" runat="server">
+        </asp:GridView>
     </form>
 </body>
 </html>
