@@ -17,5 +17,20 @@ namespace CapaNegocio
         {
             return DatosCredenciales.ObtenerCredeciales();
         }
+
+        public bool InsertarCredenciales(string servicio, string usuario, string correo, string contraseña, DateTime fecha_registro)
+        {
+            return DatosCredenciales.InsertarCredenciales(servicio, usuario, correo, contraseña, fecha_registro);
+        }
+
+        public bool ActualizarCredenciales(int id, string servicio, string usuario, string correo, string contraseña, DateTime fecha_registro)
+        {
+            return DatosCredenciales.ActualizarCredenciales(id, servicio, usuario, correo, contraseña, fecha_registro);
+        }
+
+        public bool EliminarCredenciales(int id)
+        {
+            return DatosCredenciales.EliminarCredenciales(id);
+        }
     }
 }
