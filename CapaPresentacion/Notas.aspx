@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Gestión de Notas</title>
 </head>
-<body class="bg-gray-100">
+<body class="bg-blue-200">
     <form id="form1" runat="server">
        
         <nav class="bg-blue-600 shadow-lg fixed w-full top-0 z-50">

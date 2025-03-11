@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Gestión de Credenciales</title>
 </head>
-<body class="bg-gray-100">
+<body class="bg-blue-200">
     <form id="form1" runat="server">
        
         <nav class="bg-blue-600 shadow-lg fixed w-full top-0 z-50">
@@ -30,7 +30,7 @@
 
        
         <div class="max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-md mt-16">
-            <div class="mb-8">
+            <div class="mb-8">  
                 <h1 class="text-2xl font-bold text-gray-800">Gestión de Credenciales</h1>
             </div>
 
