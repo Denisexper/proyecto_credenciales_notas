@@ -28,38 +28,47 @@
             </div>
         </nav>
 
-        <div class="max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-md mt-16">
-            <div class="mb-8">
-                <h1 class="text-2xl font-bold text-gray-800">Gestión de Notas</h1>
-            </div>
-
-            <asp:GridView ID="GvNotas" runat="server" AutoGenerateColumns="false" CssClass="min-w-full bg-white border border-gray-200 rounded-lg shadow-sm">
-                <Columns>
-                    <asp:BoundField DataField="Titulo" HeaderText="Título" HeaderStyle-CssClass="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" ItemStyle-CssClass="px-6 py-4 whitespace-nowrap text-sm text-gray-900" />
-                    <asp:BoundField DataField="Contenido" HeaderText="Descripción" HeaderStyle-CssClass="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" ItemStyle-CssClass="px-6 py-4 whitespace-nowrap text-sm text-gray-900" />
-                    <asp:BoundField DataField="fecha_creacion" HeaderText="Fecha de Creación" DataFormatString="{0:yyyy-MM-dd HH:mm:ss}" HeaderStyle-CssClass="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" ItemStyle-CssClass="px-6 py-4 whitespace-nowrap text-sm text-gray-900" />
-                    <asp:TemplateField HeaderStyle-CssClass="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" ItemStyle-CssClass="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                        <ItemTemplate>
-                            <asp:LinkButton ID="lnkEditar" runat="server" Text="Editar" CommandName="Editar" CommandArgument='<%# Eval("Id") %>' CssClass="text-blue-600 hover:text-blue-900"></asp:LinkButton>
-                            <asp:LinkButton ID="lnkEliminar" runat="server" Text="Eliminar" CommandName="Eliminar" CommandArgument='<%# Eval("Id") %>' CssClass="text-red-600 hover:text-red-900 ml-2"></asp:LinkButton>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                </Columns>
-            </asp:GridView>
-
-            <div class="mt-8">
-                <h2 class="text-xl font-semibold text-gray-800 mb-4">Agregar Notas</h2>
-                <div class="space-y-4">
-                    <div>
-                        <asp:Label ID="lblTitulo" runat="server" Text="Título" CssClass="block text-sm font-medium text-gray-700"></asp:Label>
-                        <asp:TextBox ID="txtTitulo" runat="server" CssClass="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></asp:TextBox>
+        <div class="max-w-7xl mx-auto p-8 bg-white rounded-lg shadow-md mt-16">
+            
+            <div class="flex space-x-8 items-start">
+                
+                <div class="w-2/3">
+                    
+                    <div class="mb-4">
+                        <h1 class="text-2xl font-bold text-gray-800">Gestión de Notas</h1>
                     </div>
-                    <div>
-                        <asp:Label ID="lbl" runat="server" Text="Contenido" CssClass="block text-sm font-medium text-gray-700"></asp:Label>
-                        <asp:TextBox ID="txtContenido" runat="server" CssClass="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></asp:TextBox>
-                    </div>
-                    <div>
-                        <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" CssClass="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" />
+
+                    <asp:GridView ID="GvNotas" runat="server" AutoGenerateColumns="false" CssClass="min-w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <Columns>
+                            <asp:BoundField DataField="Titulo" HeaderText="Título" HeaderStyle-CssClass="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" ItemStyle-CssClass="px-6 py-4 whitespace-nowrap text-sm text-gray-900" />
+                            <asp:BoundField DataField="Contenido" HeaderText="Descripción" HeaderStyle-CssClass="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" ItemStyle-CssClass="px-6 py-4 whitespace-nowrap text-sm text-gray-900" />
+                            <asp:BoundField DataField="fecha_creacion" HeaderText="Fecha de Creación" DataFormatString="{0:yyyy-MM-dd HH:mm:ss}" HeaderStyle-CssClass="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" ItemStyle-CssClass="px-6 py-4 whitespace-nowrap text-sm text-gray-900" />
+                            <asp:TemplateField HeaderStyle-CssClass="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" ItemStyle-CssClass="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                <ItemTemplate>
+                                    <asp:LinkButton ID="lnkEditar" runat="server" Text="Editar" CommandName="Editar" CommandArgument='<%# Eval("Id") %>' CssClass="text-blue-600 hover:text-blue-900"></asp:LinkButton>
+                                    <asp:LinkButton ID="lnkEliminar" runat="server" Text="Eliminar" CommandName="Eliminar" CommandArgument='<%# Eval("Id") %>' CssClass="text-red-600 hover:text-red-900 ml-2"></asp:LinkButton>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                        </Columns>
+                    </asp:GridView>
+                </div>
+
+                
+                <div class="w-1/3 bg-gray-50 p-6 rounded-lg shadow-sm">
+                    
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Agregar Nota</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <asp:Label ID="lblTitulo" runat="server" Text="Título" CssClass="w-1/4 text-sm font-medium text-gray-700"></asp:Label>
+                            <asp:TextBox ID="txtTitulo" runat="server" CssClass="w-3/4 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></asp:TextBox>
+                        </div>
+                        <div class="flex items-center">
+                            <asp:Label ID="lbl" runat="server" Text="Contenido" CssClass="w-1/4 text-sm font-medium text-gray-700"></asp:Label>
+                            <asp:TextBox ID="txtContenido" runat="server" CssClass="w-3/4 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></asp:TextBox>
+                        </div>
+                        <div class="flex justify-end">
+                            <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" CssClass="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" />
+                        </div>
                     </div>
                 </div>
             </div>

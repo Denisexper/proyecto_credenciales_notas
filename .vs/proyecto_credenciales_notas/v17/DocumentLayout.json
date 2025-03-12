@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\capapresentacion\\principal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\principal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\capapresentacion\\notas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\notas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\capapresentacion\\credenciales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\capapresentacion\\credenciales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\credenciales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\capapresentacion\\principal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\principal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,12 +30,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Credenciales.aspx",
               "DocumentMoniker": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaPresentacion\\Credenciales.aspx",
               "RelativeDocumentMoniker": "CapaPresentacion\\Credenciales.aspx",
-              "ToolTip": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaPresentacion\\Credenciales.aspx",
-              "RelativeToolTip": "CapaPresentacion\\Credenciales.aspx",
+              "ToolTip": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaPresentacion\\Credenciales.aspx*",
+              "RelativeToolTip": "CapaPresentacion\\Credenciales.aspx*",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-03-10T21:20:12.921Z",
@@ -43,7 +43,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Principal.aspx",
               "DocumentMoniker": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaPresentacion\\Principal.aspx",
               "RelativeDocumentMoniker": "CapaPresentacion\\Principal.aspx",
@@ -56,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Notas.aspx",
               "DocumentMoniker": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaPresentacion\\Notas.aspx",
               "RelativeDocumentMoniker": "CapaPresentacion\\Notas.aspx",
