@@ -72,8 +72,11 @@ namespace CapaPresentacion
             int id = Convert.ToInt32(GvNotas.DataKeys[e.RowIndex].Values[0]);
             GridViewRow row = GvNotas.Rows[e.RowIndex];
 
-            string titulo = (row.Cells[1].Controls[0] as System.Web.UI.WebControls.TextBox).Text;
-            string contenido = (row.Cells[2].Controls[0] as System.Web.UI.WebControls.TextBox).Text;
+            TextBox txtTitulo = row.FindControl("txtTitulo") as TextBox;
+            TextBox txtContenido = row.FindControl("txtContenido") as TextBox;
+
+            string titulo = txtTitulo.Text;
+            string contenido = txtContenido.Text;
             DateTime fecha_creacion = DateTime.Now;
 
             if (NotasN.ActualizarNota(id, titulo, contenido, fecha_creacion))

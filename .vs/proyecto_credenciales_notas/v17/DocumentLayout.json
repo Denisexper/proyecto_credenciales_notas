@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\capapresentacion\\notas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\notas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\capapresentacion\\notas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\notas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\capapresentacion\\credenciales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\credenciales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
@@ -19,8 +11,20 @@
       "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\principal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19EED183-F84D-4AFD-921D-0C0A1B197E9F}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\capanegocio\\notasnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19EED183-F84D-4AFD-921D-0C0A1B197E9F}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\notasnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\capapresentacion\\notas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\notas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\capapresentacion\\credenciales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\credenciales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\capapresentacion\\notas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\notas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19EED183-F84D-4AFD-921D-0C0A1B197E9F}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\capanegocio\\credencialesnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19EED183-F84D-4AFD-921D-0C0A1B197E9F}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\credencialesnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,33 +42,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NotasNegocio.cs",
-              "DocumentMoniker": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaNegocio\\NotasNegocio.cs",
-              "RelativeDocumentMoniker": "CapaNegocio\\NotasNegocio.cs",
-              "ToolTip": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaNegocio\\NotasNegocio.cs",
-              "RelativeToolTip": "CapaNegocio\\NotasNegocio.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB0AAAAoAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "CredencialesNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaNegocio\\CredencialesNegocio.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\CredencialesNegocio.cs",
+              "ToolTip": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaNegocio\\CredencialesNegocio.cs",
+              "RelativeToolTip": "CapaNegocio\\CredencialesNegocio.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T03:27:30.758Z",
+              "WhenOpened": "2025-03-13T15:50:00.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Credenciales.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaPresentacion\\Credenciales.aspx.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\Credenciales.aspx.cs",
+              "ToolTip": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaPresentacion\\Credenciales.aspx.cs",
+              "RelativeToolTip": "CapaPresentacion\\Credenciales.aspx.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T15:47:37.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Notas.aspx.cs",
               "DocumentMoniker": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaPresentacion\\Notas.aspx.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\Notas.aspx.cs",
               "ToolTip": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaPresentacion\\Notas.aspx.cs",
               "RelativeToolTip": "CapaPresentacion\\Notas.aspx.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAwEMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAQwGoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T03:22:27.615Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Credenciales.aspx",
               "DocumentMoniker": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaPresentacion\\Credenciales.aspx",
               "RelativeDocumentMoniker": "CapaPresentacion\\Credenciales.aspx",
@@ -77,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Principal.aspx",
               "DocumentMoniker": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaPresentacion\\Principal.aspx",
               "RelativeDocumentMoniker": "CapaPresentacion\\Principal.aspx",
@@ -90,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Notas.aspx",
               "DocumentMoniker": "C:\\Users\\vasqu\\source\\repos\\proyecto_credenciales_notas\\CapaPresentacion\\Notas.aspx",
               "RelativeDocumentMoniker": "CapaPresentacion\\Notas.aspx",
