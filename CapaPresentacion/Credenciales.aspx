@@ -11,14 +11,14 @@
 </head>
 <body class="bg-blue-200">
     <form id="form1" runat="server">
-       
+
         <nav class="bg-blue-600 shadow-lg fixed w-full top-0 z-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
                     <div class="flex items-center">
                         <a href="Principal.aspx" class="text-white text-lg font-semibold hover:text-gray-200 transition duration-300">Dashboard</a>
                     </div>
-                    
+
                     <div class="flex items-center space-x-4">
                         <a href="Credenciales.aspx" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 hover:text-gray-200 transition duration-300">Credenciales</a>
                         <a href="Notas.aspx" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 hover:text-gray-200 transition duration-300">Notas</a>
@@ -28,14 +28,14 @@
         </nav>
 
         <div class="max-w-7xl mx-auto p-8 bg-white rounded-lg shadow-md mt-16">
-            <div class="mb-8">  
+            <div class="mb-8">
                 <h1 class="text-2xl font-bold text-gray-800">Gestión de Credenciales</h1>
             </div>
 
-            
+
             <div class="flex space-x-8 items-start">
-                
-                
+
+
                 <div class="w-2/3">
                     <asp:GridView ID="gvCredenciales" runat="server" AutoGenerateColumns="false" CssClass="min-w-full bg-white border border-gray-200 rounded-lg shadow-sm">
                         <Columns>
@@ -54,7 +54,7 @@
                     </asp:GridView>
                 </div>
 
-                
+
                 <div class="w-1/3 bg-gray-50 p-6 rounded-lg shadow-sm">
 
                     <h2 class="text-2xl font-bold text-gray-800 mb-6">Agregar Credenciales</h2>

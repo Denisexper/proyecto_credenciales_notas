@@ -60,5 +60,60 @@ namespace CapaPresentacion
             txtTitulo.Text = string.Empty;
             txtContenido.Text = string.Empty;
         }
+
+        protected void GvNotas_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            GvNotas.EditIndex = e.NewEditIndex;
+            CargarNotas();
+        }
+
+        protected void GvNotas_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            int id = Convert.ToInt32(GvNotas.DataKeys[e.RowIndex].Values[0]);
+            GridViewRow row = GvNotas.Rows[e.RowIndex];
+
+            string titulo = (row.Cells[1].Controls[0] as System.Web.UI.WebControls.TextBox).Text;
+            string contenido = (row.Cells[2].Controls[0] as System.Web.UI.WebControls.TextBox).Text;
+            DateTime fecha_creacion = DateTime.Now;
+
+            if (NotasN.ActualizarNota(id, titulo, contenido, fecha_creacion))
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "sweetAlert",
+                    "swal.fire('Exito', 'Nota actualizada correctamente', 'success')", true);
+
+                GvNotas.EditIndex = -1;
+                CargarNotas();
+            }else
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "sweetAlert",
+                    "swal.fire('Error', 'Ocurrio un error al actualizar la nota', 'error')", true);
+                return;
+            }
+
+            
+        }
+
+        protected void GvNotas_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        {
+            GvNotas.EditIndex = -1;
+            CargarNotas();
+        }
+
+        protected void GvNotas_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            int id = Convert.ToInt32(GvNotas.DataKeys[e.RowIndex].Values[0]);
+            if(NotasN.EliminarNota(id))
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "sweetAlert",
+                    "swal.fire('Exito', 'Nota eliminada correctamente', 'success')", true);
+                CargarNotas();
+            }
+            else
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "sweetAlert",
+                    "swal.fire('Error', 'Ocurrio un error al eliminar la nota', 'error')", true);
+                return;
+            }
+        }
     }
 }
