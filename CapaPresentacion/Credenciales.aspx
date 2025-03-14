@@ -8,17 +8,31 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Gestión de Credenciales</title>
+    <style>
+        .grid-view {
+            table-layout: fixed;
+            width: 100%;
+        }
+        .grid-view td, .grid-view th {
+            word-wrap: break-word;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .grid-view .edit-item input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body class="bg-gradient-to-r from-blue-100 to-purple-100">
     <form id="form1" runat="server">
-
         <nav class="bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg fixed w-full top-0 z-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
                     <div class="flex items-center">
                         <a href="Principal.aspx" class="text-white text-lg font-semibold hover:text-gray-200 transition duration-300">Dashboard</a>
                     </div>
-
                     <div class="flex items-center space-x-4">
                         <a href="Credenciales.aspx" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 hover:text-gray-200 transition duration-300">Credenciales</a>
                         <a href="Notas.aspx" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-700 hover:text-gray-200 transition duration-300">Notas</a>
@@ -34,10 +48,9 @@
             </div>
 
             <div class="flex space-x-8 items-start">
-
                 <div class="w-2/3">
                     <asp:GridView ID="gvCredenciales" runat="server" AutoGenerateColumns="false"
-                        CssClass="w-full bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden"
+                        CssClass="grid-view w-full bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden"
                         OnRowCancelingEdit="gvCredenciales_RowCancelingEdit"
                         OnRowDeleting="gvCredenciales_RowDeleting"
                         OnRowEditing="gvCredenciales_RowEditing"
@@ -49,13 +62,12 @@
                         <AlternatingRowStyle CssClass="bg-gray-50 border-b hover:bg-gray-100 transition duration-150" />
 
                         <Columns>
-
                             <asp:TemplateField HeaderText="Servicio">
                                 <ItemTemplate>
                                     <asp:Label ID="lblServicio" runat="server" Text='<%# Eval("Servicio") %>' CssClass="px-6 py-4 block text-gray-700"></asp:Label>
                                 </ItemTemplate>
                                 <EditItemTemplate>
-                                    <asp:TextBox ID="txtServicio" runat="server" Text='<%# Eval("Servicio") %>' CssClass="border p-2 w-full rounded-md focus:ring-2 focus:ring-blue-500"></asp:TextBox>
+                                    <asp:TextBox ID="txtServicio" runat="server" Text='<%# Eval("Servicio") %>' CssClass="edit-item border p-2 w-full rounded-md focus:ring-2 focus:ring-blue-500"></asp:TextBox>
                                 </EditItemTemplate>
                             </asp:TemplateField>
 
@@ -64,7 +76,7 @@
                                     <asp:Label ID="lblUsuario" runat="server" Text='<%# Eval("Usuario") %>' CssClass="px-6 py-4 block text-gray-700"></asp:Label>
                                 </ItemTemplate>
                                 <EditItemTemplate>
-                                    <asp:TextBox ID="txtUsuario" runat="server" Text='<%# Eval("Usuario") %>' CssClass="border p-2 w-full rounded-md focus:ring-2 focus:ring-blue-500"></asp:TextBox>
+                                    <asp:TextBox ID="txtUsuario" runat="server" Text='<%# Eval("Usuario") %>' CssClass="edit-item border p-2 w-full rounded-md focus:ring-2 focus:ring-blue-500"></asp:TextBox>
                                 </EditItemTemplate>
                             </asp:TemplateField>
 
@@ -73,7 +85,7 @@
                                     <asp:Label ID="lblCorreo" runat="server" Text='<%# Eval("Correo") %>' CssClass="px-6 py-4 block text-gray-700"></asp:Label>
                                 </ItemTemplate>
                                 <EditItemTemplate>
-                                    <asp:TextBox ID="txtCorreo" runat="server" Text='<%# Eval("Correo") %>' CssClass="border p-2 w-full rounded-md focus:ring-2 focus:ring-blue-500"></asp:TextBox>
+                                    <asp:TextBox ID="txtCorreo" runat="server" Text='<%# Eval("Correo") %>' CssClass="edit-item border p-2 w-full rounded-md focus:ring-2 focus:ring-blue-500"></asp:TextBox>
                                 </EditItemTemplate>
                             </asp:TemplateField>
 
@@ -82,7 +94,7 @@
                                     <asp:Label ID="lblContraseña" runat="server" Text='<%# Eval("Contraseña") %>' CssClass="px-6 py-4 block text-gray-700"></asp:Label>
                                 </ItemTemplate>
                                 <EditItemTemplate>
-                                    <asp:TextBox ID="txtContraseña" runat="server" Text='<%# Eval("Contraseña") %>' CssClass="border p-2 w-full rounded-md focus:ring-2 focus:ring-blue-500"></asp:TextBox>
+                                    <asp:TextBox ID="txtContraseña" runat="server" Text='<%# Eval("Contraseña") %>' CssClass="edit-item border p-2 w-full rounded-md focus:ring-2 focus:ring-blue-500"></asp:TextBox>
                                 </EditItemTemplate>
                             </asp:TemplateField>
 
@@ -106,7 +118,6 @@
                                     </div>
                                 </EditItemTemplate>
                             </asp:TemplateField>
-
                         </Columns>
                     </asp:GridView>
                 </div>

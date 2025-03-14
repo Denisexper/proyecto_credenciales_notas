@@ -10,7 +10,7 @@
 <body class="bg-gradient-to-r from-blue-100 to-purple-100">
     <form id="form1" runat="server">
 
-        <!-- Navbar -->
+        
         <nav class="bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg fixed w-full top-0 z-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
@@ -26,14 +26,14 @@
             </div>
         </nav>
 
-        <!-- Main Content -->
+        
         <div class="max-w-7xl mx-auto p-8 mt-20">
             <h1 class="text-4xl font-bold text-gray-800 mb-6 text-center">Bienvenidos al Dashboard</h1>
             <p class="text-lg text-gray-600 mb-8 text-center">Gestiona tus notas y credenciales de manera eficiente y segura.</p>
 
-            <!-- Cards -->
+            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Card 1: Notas -->
+               
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                     <div class="p-6">
                         <h2 class="text-2xl font-semibold text-gray-800 mb-2">Administrar Notas</h2>
@@ -42,7 +42,7 @@
                     </div>
                 </div>
 
-                <!-- Card 2: Credenciales -->
+                
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                     <div class="p-6">
                         <h2 class="text-2xl font-semibold text-gray-800 mb-2">Administrar Credenciales</h2>
