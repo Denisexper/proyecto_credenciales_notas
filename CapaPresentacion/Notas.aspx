@@ -52,53 +52,25 @@
                 
                 <div class="w-2/3">
                     <asp:GridView ID="GvNotas"
-                        runat="server" AutoGenerateColumns="false"
-                        DataKeyNames="Id"
+                        runat="server" AutoGenerateColumns="False"
                         CssClass="grid-view w-full border border-gray-300 rounded-lg shadow-md overflow-hidden"
                         OnRowCancelingEdit="GvNotas_RowCancelingEdit"
                         OnRowDeleting="GvNotas_RowDeleting"
                         OnRowEditing="GvNotas_RowEditing"
-                        OnRowUpdating="GvNotas_RowUpdating">
+                        OnRowUpdating="GvNotas_RowUpdating" >
                         <HeaderStyle CssClass="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold text-left px-6 py-3" />
                         <RowStyle CssClass="bg-white border-b hover:bg-gray-50 transition duration-150" />
                         <AlternatingRowStyle CssClass="bg-gray-50 border-b hover:bg-gray-100 transition duration-150" />
                         <Columns>
-                            <asp:TemplateField HeaderText="Título">
-                                <ItemTemplate>
-                                    <asp:Label ID="lblTitulo" runat="server" Text='<%# Eval("Titulo") %>' CssClass="px-6 py-4 block text-gray-700"></asp:Label>
-                                </ItemTemplate>
-                                <EditItemTemplate>
-                                    <asp:TextBox ID="txtTitulo" runat="server" Text='<%# Eval("Titulo") %>' CssClass="edit-item border p-2 w-full rounded-md focus:ring-2 focus:ring-blue-500"></asp:TextBox>
-                                </EditItemTemplate>
-                            </asp:TemplateField>
 
-                            <asp:TemplateField HeaderText="Descripción">
-                                <ItemTemplate>
-                                    <asp:Label ID="lblContenido" runat="server" Text='<%# Eval("Contenido") %>' CssClass="px-6 py-4 block text-gray-700"></asp:Label>
-                                </ItemTemplate>
-                                <EditItemTemplate>
-                                    <asp:TextBox ID="txtContenido" runat="server" Text='<%# Eval("Contenido") %>' CssClass="edit-item border p-2 w-full rounded-md focus:ring-2 focus:ring-blue-500"></asp:TextBox>
-                                </EditItemTemplate>
-                            </asp:TemplateField>
+                            <asp:BoundField DataField="titulo" HeaderText="titulo" ItemStyle-CssClass="px-6 py-4 text-gray-700" SortExpression="titulo" />
 
-                            <asp:BoundField DataField="fecha_creacion" HeaderText="Fecha de Creación" DataFormatString="{0:yyyy-MM-dd HH:mm:ss}" ItemStyle-CssClass="px-6 py-4 text-gray-700" />
-
-                            <asp:TemplateField>
-                                <ItemTemplate>
-                                    <asp:LinkButton ID="lnkEditar" runat="server" Text="Editar" CommandName="Edit"
-                                        CssClass="text-blue-500 hover:text-blue-700 font-semibold transition duration-150"></asp:LinkButton>
-                                    <asp:LinkButton ID="lnkEliminar" runat="server" Text="Eliminar" CommandName="Delete"
-                                        CssClass="text-red-500 hover:text-red-700 font-semibold ml-4 transition duration-150"></asp:LinkButton>
-                                </ItemTemplate>
-                                <EditItemTemplate>
-                                    <asp:LinkButton ID="lnkActualizar" runat="server" Text="Actualizar" CommandName="Update"
-                                        CssClass="text-green-500 hover:text-green-700 font-semibold transition duration-150"></asp:LinkButton>
-                                    <asp:LinkButton ID="lnkCancelar" runat="server" Text="Cancelar" CommandName="Cancel"
-                                        CssClass="text-gray-500 hover:text-gray-700 font-semibold ml-4 transition duration-150"></asp:LinkButton>
-                                </EditItemTemplate>
-                            </asp:TemplateField>
+                            <asp:BoundField DataField="contenido" HeaderText="contenido" SortExpression="contenido" />
+                            <asp:BoundField DataField="fecha_creacion" HeaderText="fecha_creacion" SortExpression="fecha_creacion" />
+                            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                         </Columns>
                     </asp:GridView>
+                    <asp:SqlDataSource  runat="server" ConnectionString="<%$ ConnectionStrings:credenciales_notasConnectionString %>" SelectCommand="SELECT [titulo], [contenido], [fecha_creacion] FROM [notas]"></asp:SqlDataSource>
                 </div>
 
                 

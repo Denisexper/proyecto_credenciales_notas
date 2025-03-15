@@ -49,77 +49,29 @@
 
             <div class="flex space-x-8 items-start">
                 <div class="w-2/3">
-                    <asp:GridView ID="gvCredenciales" runat="server" AutoGenerateColumns="false"
+                    <asp:GridView ID="gvCredenciales" runat="server" AutoGenerateColumns="False"
                         CssClass="grid-view w-full bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden"
                         OnRowCancelingEdit="gvCredenciales_RowCancelingEdit"
                         OnRowDeleting="gvCredenciales_RowDeleting"
                         OnRowEditing="gvCredenciales_RowEditing"
-                        OnRowUpdating="gvCredenciales_RowUpdating"
-                        DataKeyNames="Id">
+                        OnRowUpdating="gvCredenciales_RowUpdating" >
 
                         <HeaderStyle CssClass="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold text-left px-6 py-3" />
                         <RowStyle CssClass="bg-white border-b hover:bg-gray-50 transition duration-150" />
                         <AlternatingRowStyle CssClass="bg-gray-50 border-b hover:bg-gray-100 transition duration-150" />
 
                         <Columns>
-                            <asp:TemplateField HeaderText="Servicio">
-                                <ItemTemplate>
-                                    <asp:Label ID="lblServicio" runat="server" Text='<%# Eval("Servicio") %>' CssClass="px-6 py-4 block text-gray-700"></asp:Label>
-                                </ItemTemplate>
-                                <EditItemTemplate>
-                                    <asp:TextBox ID="txtServicio" runat="server" Text='<%# Eval("Servicio") %>' CssClass="edit-item border p-2 w-full rounded-md focus:ring-2 focus:ring-blue-500"></asp:TextBox>
-                                </EditItemTemplate>
-                            </asp:TemplateField>
 
-                            <asp:TemplateField HeaderText="Usuario">
-                                <ItemTemplate>
-                                    <asp:Label ID="lblUsuario" runat="server" Text='<%# Eval("Usuario") %>' CssClass="px-6 py-4 block text-gray-700"></asp:Label>
-                                </ItemTemplate>
-                                <EditItemTemplate>
-                                    <asp:TextBox ID="txtUsuario" runat="server" Text='<%# Eval("Usuario") %>' CssClass="edit-item border p-2 w-full rounded-md focus:ring-2 focus:ring-blue-500"></asp:TextBox>
-                                </EditItemTemplate>
-                            </asp:TemplateField>
+                            <asp:BoundField DataField="usuario" HeaderText="usuario" ItemStyle-CssClass="px-6 py-4 text-gray-700" SortExpression="usuario" />
 
-                            <asp:TemplateField HeaderText="Correo">
-                                <ItemTemplate>
-                                    <asp:Label ID="lblCorreo" runat="server" Text='<%# Eval("Correo") %>' CssClass="px-6 py-4 block text-gray-700"></asp:Label>
-                                </ItemTemplate>
-                                <EditItemTemplate>
-                                    <asp:TextBox ID="txtCorreo" runat="server" Text='<%# Eval("Correo") %>' CssClass="edit-item border p-2 w-full rounded-md focus:ring-2 focus:ring-blue-500"></asp:TextBox>
-                                </EditItemTemplate>
-                            </asp:TemplateField>
-
-                            <asp:TemplateField HeaderText="Contraseña">
-                                <ItemTemplate>
-                                    <asp:Label ID="lblContraseña" runat="server" Text='<%# Eval("Contraseña") %>' CssClass="px-6 py-4 block text-gray-700"></asp:Label>
-                                </ItemTemplate>
-                                <EditItemTemplate>
-                                    <asp:TextBox ID="txtContraseña" runat="server" Text='<%# Eval("Contraseña") %>' CssClass="edit-item border p-2 w-full rounded-md focus:ring-2 focus:ring-blue-500"></asp:TextBox>
-                                </EditItemTemplate>
-                            </asp:TemplateField>
-
-                            <asp:BoundField DataField="fecha_registro" HeaderText="Fecha de Registro" DataFormatString="{0:yyyy-MM-dd HH:mm:ss}" ItemStyle-CssClass="px-6 py-4 text-gray-700" />
-
-                            <asp:TemplateField>
-                                <ItemTemplate>
-                                    <div class="flex flex-col space-y-2">
-                                        <asp:LinkButton ID="lnkEditar" runat="server" Text="Editar" CommandName="Edit"
-                                            CssClass="text-blue-500 hover:text-blue-700 font-semibold transition duration-150"></asp:LinkButton>
-                                        <asp:LinkButton ID="lnkEliminar" runat="server" Text="Eliminar" CommandName="Delete"
-                                            CssClass="text-red-500 hover:text-red-700 font-semibold transition duration-150"></asp:LinkButton>
-                                    </div>
-                                </ItemTemplate>
-                                <EditItemTemplate>
-                                    <div class="flex flex-col space-y-2">
-                                        <asp:LinkButton ID="lnkActualizar" runat="server" Text="Actualizar" CommandName="Update"
-                                            CssClass="text-green-500 hover:text-green-700 font-semibold transition duration-150"></asp:LinkButton>
-                                        <asp:LinkButton ID="lnkCancelar" runat="server" Text="Cancelar" CommandName="Cancel"
-                                            CssClass="text-gray-500 hover:text-gray-700 font-semibold transition duration-150"></asp:LinkButton>
-                                    </div>
-                                </EditItemTemplate>
-                            </asp:TemplateField>
+                            <asp:BoundField DataField="servicio" HeaderText="servicio" SortExpression="servicio" />
+                            <asp:BoundField DataField="correo" HeaderText="correo" SortExpression="correo" />
+                            <asp:BoundField DataField="contraseña" HeaderText="contraseña" SortExpression="contraseña" />
+                            <asp:BoundField DataField="fecha_registro" HeaderText="fecha_registro" SortExpression="fecha_registro" />
+                            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                         </Columns>
                     </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:credenciales_notasConnectionString %>" ProviderName="<%$ ConnectionStrings:credenciales_notasConnectionString.ProviderName %>" SelectCommand="SELECT [usuario], [servicio], [correo], [contraseña], [fecha_registro] FROM [credenciales]"></asp:SqlDataSource>
                 </div>
 
                 <div class="w-1/3 bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg shadow-lg">
