@@ -1,7 +1,5 @@
 ﻿using CapaNegocio;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -11,13 +9,13 @@ namespace CapaPresentacion
     public partial class Notas : System.Web.UI.Page
     {
         NotasNegocio NotasN = new NotasNegocio();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
                 CargarNotas();
             }
-
         }
 
         protected void CargarNotas()
@@ -28,7 +26,7 @@ namespace CapaPresentacion
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txtTitulo.Text) || string.IsNullOrEmpty(txtContenido.Text))
+            if (string.IsNullOrEmpty(txtTitulo.Text) || string.IsNullOrEmpty(txtContenido.Text))
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "sweetAlert",
                     "swal.fire('Error', 'Todos los campos son obligatorios', 'error')", true);
@@ -41,7 +39,7 @@ namespace CapaPresentacion
             DateTime fecha_creacion = DateTime.Now;
 
             bool exito = NotasN.InsertarNota(titulo, contenido, fecha_creacion);
-            if (exito) 
+            if (exito)
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "sweetAlert",
                     "swal.fire('Exito', 'Nota guardada correctamente', 'success')", true);
@@ -86,14 +84,12 @@ namespace CapaPresentacion
 
                 GvNotas.EditIndex = -1;
                 CargarNotas();
-            }else
+            }
+            else
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "sweetAlert",
                     "swal.fire('Error', 'Ocurrio un error al actualizar la nota', 'error')", true);
-                return;
             }
-
-            
         }
 
         protected void GvNotas_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
@@ -105,7 +101,7 @@ namespace CapaPresentacion
         protected void GvNotas_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             int id = Convert.ToInt32(GvNotas.DataKeys[e.RowIndex].Values[0]);
-            if(NotasN.EliminarNota(id))
+            if (NotasN.EliminarNota(id))
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "sweetAlert",
                     "swal.fire('Exito', 'Nota eliminada correctamente', 'success')", true);
@@ -115,7 +111,6 @@ namespace CapaPresentacion
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "sweetAlert",
                     "swal.fire('Error', 'Ocurrio un error al eliminar la nota', 'error')", true);
-                return;
             }
         }
     }

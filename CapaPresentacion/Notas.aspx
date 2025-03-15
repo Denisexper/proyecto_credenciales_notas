@@ -50,30 +50,27 @@
 
             <div class="flex space-x-8 items-start">
                 
-                <div class="w-2/3">
-                    <asp:GridView ID="GvNotas"
-                        runat="server" AutoGenerateColumns="False"
-                        CssClass="grid-view w-full border border-gray-300 rounded-lg shadow-md overflow-hidden"
-                        OnRowCancelingEdit="GvNotas_RowCancelingEdit"
-                        OnRowDeleting="GvNotas_RowDeleting"
-                        OnRowEditing="GvNotas_RowEditing"
-                        OnRowUpdating="GvNotas_RowUpdating" >
-                        <HeaderStyle CssClass="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold text-left px-6 py-3" />
-                        <RowStyle CssClass="bg-white border-b hover:bg-gray-50 transition duration-150" />
-                        <AlternatingRowStyle CssClass="bg-gray-50 border-b hover:bg-gray-100 transition duration-150" />
-                        <Columns>
-
-                            <asp:BoundField DataField="titulo" HeaderText="titulo" ItemStyle-CssClass="px-6 py-4 text-gray-700" SortExpression="titulo" />
-
-                            <asp:BoundField DataField="contenido" HeaderText="contenido" SortExpression="contenido" />
-                            <asp:BoundField DataField="fecha_creacion" HeaderText="fecha_creacion" SortExpression="fecha_creacion" />
-                            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                        </Columns>
-                    </asp:GridView>
-                    <asp:SqlDataSource  runat="server" ConnectionString="<%$ ConnectionStrings:credenciales_notasConnectionString %>" SelectCommand="SELECT [titulo], [contenido], [fecha_creacion] FROM [notas]"></asp:SqlDataSource>
+               <div class="w-2/3">
+                        <asp:GridView ID="GvNotas"
+                            runat="server" AutoGenerateColumns="False" DataKeyNames="id"
+                            CssClass="grid-view w-full border border-gray-300 rounded-lg shadow-md overflow-hidden"
+                            OnRowCancelingEdit="GvNotas_RowCancelingEdit"
+                            OnRowDeleting="GvNotas_RowDeleting"
+                            OnRowEditing="GvNotas_RowEditing"
+                            OnRowUpdating="GvNotas_RowUpdating">
+                            <HeaderStyle CssClass="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold text-left px-6 py-3" />
+                            <RowStyle CssClass="bg-white border-b hover:bg-gray-50 transition duration-150" />
+                            <AlternatingRowStyle CssClass="bg-gray-50 border-b hover:bg-gray-100 transition duration-150" />
+                            <Columns>
+                                <asp:BoundField DataField="titulo" HeaderText="titulo" ItemStyle-CssClass="px-6 py-4 text-gray-700" SortExpression="titulo" />
+                                <asp:BoundField DataField="contenido" HeaderText="contenido" SortExpression="contenido" />
+                                <asp:BoundField DataField="fecha_creacion" HeaderText="fecha_creacion" SortExpression="fecha_creacion" />
+                                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                            </Columns>
+                        </asp:GridView>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:credenciales_notasConnectionString2 %>" ProviderName="<%$ ConnectionStrings:credenciales_notasConnectionString2.ProviderName %>" SelectCommand="SELECT [titulo], [contenido], [fecha_creacion] FROM [notas]"></asp:SqlDataSource>
                 </div>
 
-                
                 <div class="w-1/3 bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg shadow-lg">
                     <h2 class="text-2xl font-bold text-gray-800 mb-6">Agregar una nota</h2>
                     <div class="space-y-6">

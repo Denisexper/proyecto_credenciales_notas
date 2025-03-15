@@ -49,7 +49,7 @@
 
             <div class="flex space-x-8 items-start">
                 <div class="w-2/3">
-                    <asp:GridView ID="gvCredenciales" runat="server" AutoGenerateColumns="False"
+                    <asp:GridView ID="gvCredenciales" runat="server" AutoGenerateColumns="False" DataKeyNames="Id"
                         CssClass="grid-view w-full bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden"
                         OnRowCancelingEdit="gvCredenciales_RowCancelingEdit"
                         OnRowDeleting="gvCredenciales_RowDeleting"
