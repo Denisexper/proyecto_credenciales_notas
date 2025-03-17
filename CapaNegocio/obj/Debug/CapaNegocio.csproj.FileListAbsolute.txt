@@ -25,3 +25,12 @@ C:\Users\andre\Source\Repos\proyecto_credenciales_notas2\CapaNegocio\obj\Debug\C
 C:\Users\andre\Source\Repos\proyecto_credenciales_notas2\CapaNegocio\obj\Debug\CapaNego.81B9D119.Up2Date
 C:\Users\andre\Source\Repos\proyecto_credenciales_notas2\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\andre\Source\Repos\proyecto_credenciales_notas2\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\alexa\Source\Repos\proyecto_credenciales_notas\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\alexa\Source\Repos\proyecto_credenciales_notas\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\alexa\Source\Repos\proyecto_credenciales_notas\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\alexa\Source\Repos\proyecto_credenciales_notas\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\alexa\Source\Repos\proyecto_credenciales_notas\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\alexa\Source\Repos\proyecto_credenciales_notas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Source\Repos\proyecto_credenciales_notas\CapaNegocio\obj\Debug\CapaNego.81B9D119.Up2Date
+C:\Users\alexa\Source\Repos\proyecto_credenciales_notas\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\alexa\Source\Repos\proyecto_credenciales_notas\CapaNegocio\obj\Debug\CapaNegocio.pdb

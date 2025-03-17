@@ -45,7 +45,7 @@
         <div class="max-w-7xl mx-auto p-8 bg-white rounded-lg shadow-2xl mt-16">
             <div class="mb-8">
                 <h1 class="text-3xl font-bold text-gray-800">Gestión de Notas</h1>
-                <p class="text-gray-600">Administra y organiza tus notas de manera eficiente.</p>
+                <p class="text-gray-600">Administra y organiza tus notas de manera mas eficiente.</p>
             </div>
 
             <div class="flex flex-col space-y-8 items-start h-screen w-full">

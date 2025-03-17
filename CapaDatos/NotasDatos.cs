@@ -13,6 +13,7 @@ namespace CapaDatos
     {
         private string conexionString = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
 
+        //obtener Notas
         public DataTable ObtenerNotas()
         {
             DataTable dt = new DataTable();
