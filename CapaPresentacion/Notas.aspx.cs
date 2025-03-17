@@ -68,8 +68,6 @@ namespace CapaPresentacion
         protected void GvNotas_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
  
-
-
             int id = Convert.ToInt32(GvNotas.DataKeys[e.RowIndex].Value);
             GridViewRow row = GvNotas.Rows[e.RowIndex];
 

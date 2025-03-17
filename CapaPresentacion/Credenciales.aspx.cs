@@ -73,19 +73,14 @@ namespace CapaPresentacion
 
         protected void gvCredenciales_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            int id = Convert.ToInt32(gvCredenciales.DataKeys[e.RowIndex].Values[0]);
+            int id = Convert.ToInt32(gvCredenciales.DataKeys[e.RowIndex].Value);
             GridViewRow row = gvCredenciales.Rows[e.RowIndex];
 
-            TextBox txtServicio = row.FindControl("txtServicio") as TextBox;
-            TextBox txtUsuario = row.FindControl("txtUsuario") as TextBox;
-            TextBox txtCorreo = row.FindControl("txtCorreo") as TextBox;
-            TextBox txtContraseña = row.FindControl("txtContraseña") as TextBox;
+            string Servicio = (row.Cells[0].Controls[0] as System.Web.UI.WebControls.TextBox).Text;
+            string Usuario = (row.Cells[1].Controls[0] as System.Web.UI.WebControls.TextBox).Text;
+            string Correo = (row.Cells[0].Controls[0] as System.Web.UI.WebControls.TextBox).Text;
+            string Contraseña = (row.Cells[1].Controls[0] as System.Web.UI.WebControls.TextBox).Text;
 
-
-            string Servicio = txtServicio.Text;
-            string Usuario = txtUsuario.Text;
-            string Correo = txtCorreo.Text;
-            string Contraseña = txtContraseña.Text;
             DateTime fecha_creacion = DateTime.Now;
 
             if (credencialesN.ActualizarCredenciales(id, Servicio, Usuario, Correo, Contraseña, fecha_creacion))

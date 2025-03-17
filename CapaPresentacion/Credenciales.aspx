@@ -67,7 +67,7 @@
                             <asp:BoundField DataField="servicio" HeaderText="servicio" SortExpression="servicio" />
                             <asp:BoundField DataField="correo" HeaderText="correo" SortExpression="correo" />
                             <asp:BoundField DataField="contraseña" HeaderText="contraseña" SortExpression="contraseña" />
-                            <asp:BoundField DataField="fecha_registro" HeaderText="fecha_registro" SortExpression="fecha_registro" />
+                            <asp:BoundField DataField="fecha_registro" HeaderText="fecha_registro" SortExpression="fecha_registro" ReadOnly="true" />
                             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                         </Columns>
                     </asp:GridView>

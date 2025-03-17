@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\andre\\source\\repos\\proyecto_credenciales_notas2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\andre\\source\\repos\\proyecto_credenciales_notas2\\capapresentacion\\notas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\notas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\andre\\source\\repos\\proyecto_credenciales_notas2\\capapresentacion\\credenciales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\credenciales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\andre\\source\\repos\\proyecto_credenciales_notas2\\capapresentacion\\notas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\notas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\andre\\source\\repos\\proyecto_credenciales_notas2\\capapresentacion\\notas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BA3D41D-668F-4F17-82EE-51A33D8DF5C0}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\notas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 650,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Notas.aspx",
               "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\proyecto_credenciales_notas2\\CapaPresentacion\\Notas.aspx",
               "RelativeDocumentMoniker": "CapaPresentacion\\Notas.aspx",
@@ -32,6 +36,19 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-03-15T04:12:26.409Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Credenciales.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\proyecto_credenciales_notas2\\CapaPresentacion\\Credenciales.aspx.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\Credenciales.aspx.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\proyecto_credenciales_notas2\\CapaPresentacion\\Credenciales.aspx.cs*",
+              "RelativeToolTip": "CapaPresentacion\\Credenciales.aspx.cs*",
+              "ViewState": "AgIAAEcAAAAAAAAAAADgv1EAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:15:32.379Z",
               "EditorCaption": ""
             },
             {
@@ -48,9 +65,9 @@
               "Title": "Notas.aspx.cs",
               "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\proyecto_credenciales_notas2\\CapaPresentacion\\Notas.aspx.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\Notas.aspx.cs",
-              "ToolTip": "C:\\Users\\andre\\source\\repos\\proyecto_credenciales_notas2\\CapaPresentacion\\Notas.aspx.cs",
-              "RelativeToolTip": "CapaPresentacion\\Notas.aspx.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAawEgAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\proyecto_credenciales_notas2\\CapaPresentacion\\Notas.aspx.cs*",
+              "RelativeToolTip": "CapaPresentacion\\Notas.aspx.cs*",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAawEUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T04:11:56.97Z",
               "EditorCaption": ""
