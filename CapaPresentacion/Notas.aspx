@@ -64,8 +64,34 @@
                             <Columns>
                                 <asp:BoundField DataField="titulo" HeaderText="titulo" ItemStyle-CssClass="px-6 py-4 text-gray-700" SortExpression="titulo" />
                                 <asp:BoundField DataField="contenido" HeaderText="contenido" SortExpression="contenido" />
-                                <asp:BoundField DataField="fecha_creacion" HeaderText="fecha_creacion" SortExpression="fecha_creacion" />
-                                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                                <asp:BoundField DataField="fecha_creacion" HeaderText="fecha_creacion" SortExpression="fecha_creacion"  ReadOnly="true" />
+       
+                                <asp:TemplateField HeaderText="Acciones">
+                                    <ItemTemplate>
+                                        <asp:LinkButton ID="btnEditar" runat="server" CommandName="Edit"
+                                            CssClass="px-3 py-1 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-150">
+                                            ✏️ Editar
+                                        </asp:LinkButton>
+
+                                        <asp:LinkButton ID="btnEliminar" runat="server" CommandName="Delete" OnClientClick="return confirm('¿Seguro que deseas eliminar esta nota?');"
+                                            CssClass="px-3 py-1 bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-150 ml-2">
+                                            🗑️ Eliminar
+                                        </asp:LinkButton>
+                                    </ItemTemplate>
+
+                                    <EditItemTemplate>
+                                        <asp:LinkButton ID="btnActualizar" runat="server" CommandName="Update"
+                                            CssClass="px-3 py-1 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-150">
+                                            💾 Guardar
+                                        </asp:LinkButton>
+
+                                        <asp:LinkButton ID="btnCancelar" runat="server" CommandName="Cancel"
+                                            CssClass="px-3 py-1 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition duration-150 ml-2">
+                                            ❌ Cancelar
+                                        </asp:LinkButton>
+                                    </EditItemTemplate>
+                                </asp:TemplateField>
+
                             </Columns>
                         </asp:GridView>
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>"  SelectCommand="SELECT [titulo], [contenido], [fecha_creacion] FROM [notas]"></asp:SqlDataSource>
