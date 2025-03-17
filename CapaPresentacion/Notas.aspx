@@ -88,24 +88,24 @@
                                  <ItemTemplate>
                                      <asp:LinkButton ID="btnEditar" runat="server" CommandName="Edit"
                                          CssClass="px-3 py-1 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-150">
-                                         ✏️ Editar
+                                         Editar
                                      </asp:LinkButton>
 
                                      <asp:LinkButton ID="btnEliminar" runat="server" CommandName="Delete" OnClientClick="return confirm('¿Seguro que deseas eliminar esta nota?');"
                                          CssClass="px-3 py-1 bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-150 ml-2">
-                                         🗑️ Eliminar
+                                         Eliminar
                                      </asp:LinkButton>
                                  </ItemTemplate>
 
                                  <EditItemTemplate>
                                      <asp:LinkButton ID="btnActualizar" runat="server" CommandName="Update"
                                          CssClass="px-3 py-1 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-150">
-                                         💾 Guardar
+                                         Guardar
                                      </asp:LinkButton>
 
                                      <asp:LinkButton ID="btnCancelar" runat="server" CommandName="Cancel"
                                          CssClass="px-3 py-1 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition duration-150 ml-2">
-                                         ❌ Cancelar
+                                         Cancelar
                                      </asp:LinkButton>
                                  </EditItemTemplate>
                              </asp:TemplateField>

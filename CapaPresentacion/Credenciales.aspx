@@ -47,8 +47,34 @@
                 <p class="text-gray-600">Administra y organiza tus credenciales de manera segura.</p>
             </div>
 
-            <div class="flex space-x-8 items-start">
-                <div class="w-2/3">
+            <div class="flex flex-col space-y-8 items-start h-screen w-full">
+                
+                <div class="w-full bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Agregar Credenciales</h2>
+                    <div class="flex space-x-6 items-end w-full">
+                         <div class="flex flex-col w-1/3">
+                            <asp:TextBox ID="txtServicio" runat="server" Placeholder="Servicio"
+                                CssClass="px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+                        </div>
+                        <div class="flex flex-col w-1/3">
+                            <asp:TextBox ID="txtUsuario" runat="server" Placeholder="Usuario"
+                                CssClass="px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+                        </div>
+                        <div class="flex flex-col w-1/3">
+                            <asp:TextBox ID="txtCorreo" runat="server" Placeholder="Correo"
+                                CssClass="px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+                        </div>
+                        <div class="flex flex-col w-1/3">
+                            <asp:TextBox ID="txtContraseña" runat="server" TextMode="Password" Placeholder="Contraseña"
+                                CssClass="px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+                        </div>
+                        <div class="flex flex-col w-1/3">
+                            <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" CssClass="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full">
                     <asp:GridView ID="gvCredenciales" runat="server" AutoGenerateColumns="False" DataKeyNames="Id"
                         CssClass="grid-view w-full bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden"
                         OnRowCancelingEdit="gvCredenciales_RowCancelingEdit"
@@ -68,35 +94,36 @@
                             <asp:BoundField DataField="correo" HeaderText="correo" SortExpression="correo" />
                             <asp:BoundField DataField="contraseña" HeaderText="contraseña" SortExpression="contraseña" />
                             <asp:BoundField DataField="fecha_registro" HeaderText="fecha_registro" SortExpression="fecha_registro" ReadOnly="true" />
-                            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+            
+                            <asp:TemplateField HeaderText="Acciones">
+                                <ItemTemplate>
+                                    <asp:LinkButton ID="btnEditar" runat="server" CommandName="Edit"
+                                        CssClass="px-3 py-1 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-150">
+                                        Editar
+                                    </asp:LinkButton>
+
+                                    <asp:LinkButton ID="btnEliminar" runat="server" CommandName="Delete" OnClientClick="return confirm('¿Seguro que deseas eliminar esta nota?');"
+                                        CssClass="px-3 py-1 bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-150 ml-2">
+                                        Eliminar
+                                    </asp:LinkButton>
+                                </ItemTemplate>
+
+                                <EditItemTemplate>
+                                    <asp:LinkButton ID="btnActualizar" runat="server" CommandName="Update"
+                                        CssClass="px-3 py-1 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-150">
+                                        Guardar
+                                    </asp:LinkButton>
+
+                                    <asp:LinkButton ID="btnCancelar" runat="server" CommandName="Cancel"
+                                        CssClass="px-3 py-1 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition duration-150 ml-2">
+                                        Cancelar
+                                    </asp:LinkButton>
+                                </EditItemTemplate>
+                            </asp:TemplateField>
+
                         </Columns>
                     </asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>"  SelectCommand="SELECT [usuario], [servicio], [correo], [contraseña], [fecha_registro] FROM [credenciales]"></asp:SqlDataSource>
-                </div>
-
-                <div class="w-1/3 bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg shadow-lg">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Agregar Credenciales</h2>
-                    <div class="space-y-6">
-                        <div class="flex flex-col">
-                            <asp:Label ID="lblServicio" runat="server" Text="Servicio" CssClass="text-sm font-medium text-gray-700 mb-2"></asp:Label>
-                            <asp:TextBox ID="txtServicio" runat="server" CssClass="px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></asp:TextBox>
-                        </div>
-                        <div class="flex flex-col">
-                            <asp:Label ID="lblUsuario" runat="server" Text="Usuario" CssClass="text-sm font-medium text-gray-700 mb-2"></asp:Label>
-                            <asp:TextBox ID="txtUsuario" runat="server" CssClass="px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></asp:TextBox>
-                        </div>
-                        <div class="flex flex-col">
-                            <asp:Label ID="lblCorreo" runat="server" Text="Correo" CssClass="text-sm font-medium text-gray-700 mb-2"></asp:Label>
-                            <asp:TextBox ID="txtCorreo" runat="server" CssClass="px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></asp:TextBox>
-                        </div>
-                        <div class="flex flex-col">
-                            <asp:Label ID="lblContraseña" runat="server" Text="Contraseña" CssClass="text-sm font-medium text-gray-700 mb-2"></asp:Label>
-                            <asp:TextBox ID="txtContraseña" runat="server" TextMode="Password" CssClass="px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></asp:TextBox>
-                        </div>
-                        <div class="flex justify-end">
-                            <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" CssClass="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" />
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
