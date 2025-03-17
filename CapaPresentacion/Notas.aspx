@@ -68,7 +68,7 @@
                                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                             </Columns>
                         </asp:GridView>
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:credenciales_notasConnectionString2 %>" ProviderName="<%$ ConnectionStrings:credenciales_notasConnectionString2.ProviderName %>" SelectCommand="SELECT [titulo], [contenido], [fecha_creacion] FROM [notas]"></asp:SqlDataSource>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>"  SelectCommand="SELECT [titulo], [contenido], [fecha_creacion] FROM [notas]"></asp:SqlDataSource>
                 </div>
 
                 <div class="w-1/3 bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg shadow-lg">

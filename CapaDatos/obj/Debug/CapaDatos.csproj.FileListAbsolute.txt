@@ -10,3 +10,9 @@ C:\Users\neheg\source\repos\Nueva carpeta\CapaDatos\obj\Debug\CapaDatos.csproj.A
 C:\Users\neheg\source\repos\Nueva carpeta\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
 C:\Users\neheg\source\repos\Nueva carpeta\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\neheg\source\repos\Nueva carpeta\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\andre\Source\Repos\proyecto_credenciales_notas2\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\andre\Source\Repos\proyecto_credenciales_notas2\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\andre\Source\Repos\proyecto_credenciales_notas2\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\andre\Source\Repos\proyecto_credenciales_notas2\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\andre\Source\Repos\proyecto_credenciales_notas2\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\andre\Source\Repos\proyecto_credenciales_notas2\CapaDatos\obj\Debug\CapaDatos.pdb

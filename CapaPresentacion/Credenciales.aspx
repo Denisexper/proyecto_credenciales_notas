@@ -71,7 +71,7 @@
                             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                         </Columns>
                     </asp:GridView>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:credenciales_notasConnectionString %>" ProviderName="<%$ ConnectionStrings:credenciales_notasConnectionString.ProviderName %>" SelectCommand="SELECT [usuario], [servicio], [correo], [contraseña], [fecha_registro] FROM [credenciales]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>"  SelectCommand="SELECT [usuario], [servicio], [correo], [contraseña], [fecha_registro] FROM [credenciales]"></asp:SqlDataSource>
                 </div>
 
                 <div class="w-1/3 bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg shadow-lg">
